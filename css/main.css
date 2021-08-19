@@ -1,0 +1,658 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&display=swap");
+.btn-style, .items-footer .add-btn, .buy-alert-container .buy-alert-btn #show-btn, .buy-alert-container .buy-alert-btn #close-btn, .cart-submit-popup .cart-submit-container .cart-submit-main #done-btn {
+  outline: none;
+  background-color: #14213d;
+  color: #e5e5e5;
+  border: 3px solid #fca311;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2vw;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.btn-style:active, .items-footer .add-btn:active, .buy-alert-container .buy-alert-btn #show-btn:active, .buy-alert-container .buy-alert-btn #close-btn:active, .cart-submit-popup .cart-submit-container .cart-submit-main #done-btn:active {
+  background-color: #fca311;
+  border: 3px solid #14213d;
+}
+
+@media (max-width: 950px) {
+  .btn-style, .items-footer .add-btn, .buy-alert-container .buy-alert-btn #show-btn, .buy-alert-container .buy-alert-btn #close-btn, .cart-submit-popup .cart-submit-container .cart-submit-main #done-btn {
+    width: 100px;
+  }
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.focus-in-contract {
+  -webkit-animation: focus-in-contract 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+          animation: focus-in-contract 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
+.focus-in-contract2 {
+  -webkit-animation: focus-in-contract 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+          animation: focus-in-contract 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+}
+
+.tracking-in-contract-bck-top {
+  -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
+          animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.head {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url(/images/background.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.9) 100%), url(/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.head-nav {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(20, 33, 61, 0.6);
+}
+
+.head-nav .itemul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0;
+}
+
+.head-nav .itemul li {
+  line-height: 60px;
+  cursor: pointer;
+  padding: 0 10px;
+  color: #fca311;
+  list-style-type: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2vw;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.head-nav .itemul li:hover {
+  background-color: #fca311;
+  color: #14213d;
+  letter-spacing: 3px;
+}
+
+main .slider {
+  width: 100%;
+}
+
+main .slider-header {
+  padding-top: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+main .slider-header-text {
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 2rem;
+}
+
+main .slider-card-container {
+  width: 60%;
+  border: 2px solid white;
+  -webkit-box-shadow: 5px 5px 10px white,-5px -5px 10px white;
+          box-shadow: 5px 5px 10px white,-5px -5px 10px white;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 550px) {
+  main .slider-card-container {
+    width: 90%;
+  }
+}
+
+main .slider-card-container .slider-card img {
+  width: 100%;
+  height: 400px;
+}
+
+main .slider .dot-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+main .content .item-container {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 550px) {
+  main .content .item-container {
+    width: 100%;
+  }
+}
+
+.footer {
+  margin-top: 60px;
+  width: 100%;
+  height: 20vh;
+  background-color: #14213d;
+  font-family: "Bebas Neue", cursive;
+  color: #fca311;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+}
+
+.footer .social-media {
+  font-size: 2.5rem;
+}
+
+.footer .social-media i {
+  padding: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer .social-media i:hover {
+  color: #e5e5e5;
+}
+
+.head-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fca311;
+  font-size: 2vw;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+@media (max-width: 750px) {
+  .head-cart {
+    margin-left: 0;
+  }
+}
+
+.fa-user {
+  padding-left: 40px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fa-user:hover {
+  color: #e5e5e5;
+}
+
+@media (max-width: 750px) {
+  .fa-user {
+    padding-left: 20px;
+  }
+}
+
+.head-icon-label {
+  font-size: 2vw;
+  padding-left: 10px;
+  font-family: "Bebas Neue", cursive;
+  cursor: pointer;
+  color: #e5e5e5;
+}
+
+.fa-sort-down {
+  margin-left: 10px;
+  font-size: 5px;
+}
+
+.fa-shopping-cart {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fa-shopping-cart:hover {
+  color: #e5e5e5;
+}
+
+.hidden {
+  display: none;
+}
+
+#home {
+  background-color: #e5e5e5;
+  color: #14213d;
+}
+
+.proflie-info {
+  position: absolute;
+  background-color: rgba(229, 229, 229, 0.7);
+  border-radius: 3%;
+  font-size: 2vw;
+  color: #000000;
+  font-family: "Bebas Neue", cursive;
+  left: 10%;
+  top: 10%;
+}
+
+.proflie-info ul {
+  margin: 0;
+}
+
+.proflie-info ul li {
+  list-style-type: none;
+  padding: 8px;
+  border-bottom: 2px solid #fca311;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.proflie-info ul li:hover {
+  border-bottom: 5px solid #14213d;
+}
+
+.head-name {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fca311;
+  font-size: 6vw;
+  letter-spacing: 9px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.sub-name {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fca311;
+  font-size: 4vw;
+  letter-spacing: 3px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 48%;
+  color: #fca311;
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+.scroll-down li {
+  list-style-type: none;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.items {
+  width: 30%;
+  height: 30vw;
+  margin-top: 40px;
+  background-color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  -webkit-box-shadow: 5px 5px 10px #999999, -5px -5px 10px #999999;
+          box-shadow: 5px 5px 10px #999999, -5px -5px 10px #999999;
+  border-radius: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.items img {
+  width: 100%;
+  height: 70%;
+  border-bottom: 4px solid #fca311;
+}
+
+.items-footer {
+  background-image: url(images/Simple-Shiny.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.items-footer .add-btn i {
+  padding-right: 20px;
+}
+
+.items-footer .price {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3vw;
+  border-bottom: 3px solid #fca311;
+}
+
+.buy-alert-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #14213d;
+}
+
+.buy-alert-container span {
+  padding-left: 10px;
+  font-family: "Quicksand", sans-serif;
+  color: #e5e5e5;
+  font-size: 2vw;
+}
+
+.buy-alert-container span .span-in {
+  color: #fca311;
+}
+
+.buy-alert-container .buy-alert-btn #close-btn {
+  margin: 0 30px;
+}
+
+@media (max-width: 550px) {
+  .buy-alert-container .buy-alert-btn #close-btn {
+    margin: 0;
+  }
+}
+
+.cart-submit-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cart-submit-popup .cart-submit-container {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+.cart-submit-popup .cart-submit-container .cart-submit-header {
+  width: 95%;
+  margin: auto;
+  padding-top: 10px;
+  font-size: 2vw;
+  font-family: "Bebas Neue", cursive;
+  color: #14213d;
+}
+
+.cart-submit-popup .cart-submit-container .cart-submit-header #x-btn {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  text-align: right;
+  font-size: 2vw;
+}
+
+.cart-submit-popup .cart-submit-container .cart-submit-header #x-btn:hover {
+  color: #fca311;
+  cursor: pointer;
+}
+
+.cart-submit-popup .cart-submit-container .cart-submit-main {
+  padding-left: 10px;
+  font-family: "Bebas Neue", cursive;
+  color: #14213d;
+  font-size: 2vw;
+}
+
+.cart-submit-popup .cart-submit-container .cart-submit-main select {
+  background-color: #14213d;
+  color: #fca311;
+  border-radius: 5px;
+}
+
+.cart-submit-popup .cart-submit-container .cart-submit-main #done-btn {
+  position: absolute;
+  bottom: -3%;
+}
+
+@media (max-width: 550px) {
+  .head-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 80px;
+  }
+  .head-nav .itemul {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    height: 50%;
+  }
+  .head-nav .itemul li {
+    line-height: 40px;
+    font-size: 3vw;
+  }
+  .head-nav .head-cart {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .head-nav .head-cart .first {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-left: 10px;
+  }
+  .head-nav .head-cart .first i, .head-nav .head-cart .first label {
+    font-size: 3vw;
+  }
+  .head-nav .head-cart .second {
+    margin-right: 20px;
+    font-size: 3vw;
+  }
+  .head-nav .head-cart .second i, .head-nav .head-cart .second label {
+    font-size: 3vw;
+  }
+  .proflie-info {
+    top: 16%;
+    left: 6%;
+  }
+  .proflie-info li {
+    font-size: 3vw;
+  }
+  .btn-style, .items-footer .add-btn, .buy-alert-container .buy-alert-btn #show-btn, .buy-alert-container .buy-alert-btn #close-btn, .cart-submit-popup .cart-submit-container .cart-submit-main #done-btn {
+    width: 80px;
+    font-size: 3vw;
+  }
+  .content {
+    width: 100%;
+  }
+  .items {
+    width: 45%;
+    height: 50vw;
+  }
+  .buy-alert-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .buy-alert-container span {
+    font-size: 3vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */

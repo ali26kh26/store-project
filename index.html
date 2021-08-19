@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="head">
+      <nav class="head-nav">
+        <div class="head-cart">
+          <div class="second">
+          <i class="fa fa-shopping-cart" id="cart"></i>
+          <label  for="cart" id="cart-label" class="hvr-icon-back head-icon-label">     
+          Cart<i class="fa fa-sort-down hvr-icon"></i> 
+        </label>
+      </div>
+      <div class="first">
+          <i class="fa fa-user" id="user"></i>
+          <label for="user" id="profile-label" class="hvr-sink  head-icon-label">
+            Profile<i class="fa fa-sort-down"></i>
+          </label>
+        </div>
+          <div class="proflie-info hidden" id="proinfo">
+            <ul>
+              <li>edit profile</li>
+              <li>change password</li>
+              <li>change username</li>
+              <li>my vallet</li>
+              <li>sign out</li>
+            </ul>
+          </div>
+        </div>
+        <ul class="itemul">
+          <li id="home"><i class="fa fa-home"></i> HOME</li>
+          <li class="hvr-bubble-float-top">
+            <i class="fa fa-info-circle"></i> ABOUT
+          </li>
+          <li><i class="fa fa-cogs"></i> SERVICES</li>
+          <li><i class="fa fa-phone-square"></i> CONTACT</li>
+          <li><i class="fa fa-newspaper-o"></i> NEWS</li>
+        </ul>
+      </nav>
+      <div class="head-content">
+        <div>
+          <p class="head-name focus-in-contract">MY STORE</p>
+          <p class="sub-name focus-in-contract2">Explore in Products</p>
+        </div>
+        <ul class="scroll-down tracking-in-contract-bck-top">
+          <li>V</li>
+          <li>V</li>
+          <li>V</li>
+        </ul>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main>
+      <!-- start slider -->
+      <div class="slider" style="background-image: url(images/Sprinkle.svg);">
+        <div class="slider-header row">
+          <span class="col-4 slider-header-hr"><hr /></span>
+          <p class="col-4 slider-header-text">MOST POPULAR</p>
+          <span class="col-4 slider-header-hr"><hr /></span>
+        </div>
+        <div class="slider-card-container">
+          <div class="slider-card fade">
+            <img src="images/nikeboot2.jpg" />
+          </div>
+          <div class="slider-card fade">
+            <img src="images/adidasball.jpg" />
+          </div>
+          <div class="slider-card fade">
+            <img src="images/kit5.jpg" />
+          </div>
+        </div>
+        <div class="dot-container">
+          <p class="dot"></p>
+          <p class="dot"></p>
+          <p class="dot"></p>
+        </div>
+      </div>
+
+       <!-- end slider -->
+       <div class="content">
+         <div class="item-container">
+           <div class="items">
+             <img src="images/adidasboot3.jpg" >
+             <div class="items-footer">
+               <button class="add-btn"><i class="fa fa-shopping-cart"></i>Add</button>
+               <p class="price">$150.0</p>
+             </div>
+           </div>
+           <div class="items">
+            <img src="images/kit4.jpg" >
+            <div class="items-footer">
+              <button class="add-btn"><i class="fa fa-shopping-cart"></i>Add</button>
+              <p class="price">$60.0</p>
+            </div>
+          </div>
+          <div class="items">
+            <img src="images/nikeboot3.jpg" >
+            <div class="items-footer">
+              <button class="add-btn"><i class="fa fa-shopping-cart"></i>Add</button>
+              <p class="price">$120.0</p>
+            </div>
+          </div>
+          <div class="items">
+            <img src="images/barcellonaball (1).jpg" >
+            <div class="items-footer">
+              <button class="add-btn"><i class="fa fa-shopping-cart"></i>Add</button>
+              <p class="price">$50.0</p>
+            </div>
+          </div>
+          <div class="items">
+            <img src="images/adidasboot1.jpg" >
+            <div class="items-footer">
+              <button class="add-btn"><i class="fa fa-shopping-cart"></i>Add</button>
+              <p class="price">$140.0</p>
+            </div>
+          </div>
+          <div class="items">
+            <img src="images/nikeboot4.jpg" >
+            <div class="items-footer">
+              <button class="add-btn"><i class="fa fa-shopping-cart"></i>Add</button>
+              <p class="price">$100.0</p>
+            </div>
+          </div>
+         </div>
+       </div>
+      <div class="aside"></div>
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="social-media">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter-square"></i>
+        <i class="	fa fa-facebook-official"></i>
+        <i class="	fa fa-youtube-play"></i>
+      </div>
+      <p class="copyright">
+        &copy;copyright : Ali khodadai
+      </p>
+    </footer>
+    <!-- end footer -->
+
+
+
+
+
+
+
+    <!-- hidden elements -->
+    <div class="hidden" id="buy-alert">
+      <div class="buy-alert-container">
+      <span>You purachased<span class="span-in" id="span-in">1 </span>item do you want to show your cart :</span>
+      <div class="buy-alert-btn">
+        <button id="show-btn">show</button>
+        <button id="close-btn">close</button>
+      </div>
+    </div>
+    </div>
+
+    <div class="cart-submit-popup hidden" id="cart-submit">
+      <div class="cart-submit-container">
+        <header class="cart-submit-header row">
+          <p class="offset-5 col-3">Your cart</p>
+          <p class="col-4" id="x-btn">X</p>
+        </header>
+        <main class="cart-submit-main row">
+         <div class="col-6">
+          select state :</br>
+         <select id="state">
+           <option value="California">California</option>
+           <option value="Los Angeles">Los Angeles</option>
+           <option value="New York">New York</option>
+         </select><br><br>
+        </div>
+         <div class="mail col-6">
+          select mail option :</br>
+          <input name="mail" id="ups" type="radio" value="ups">
+          <label class="mail-label" for="ups">UPS (+$4.0)</label><br>
+          <input  name="mail" id="upsd" type="radio" value="upsd">
+          <label class="mail-label" for="upsd">UPSD (+$2.0)</label><br>
+          <input  name="mail" id="normal" type="radio" value="normal" checked>
+          <label class="mail-label" for="normal">normal</label><br>
+        </div>
+        <div class="total col-6">
+          <p id="count">Items : </p>
+          <p id="total-state"></p>
+          <p id="price">Total : </p>
+        </div>
+        <button class="offset-5 col-4 col-sm-12" id="done-btn">SUBMIT</button>
+      </main>
+      </div>
+    </div>
+    <!-- hidden elements -->
+
+  </body>
+  <script src="javascript/main.js"></script>
+</html>

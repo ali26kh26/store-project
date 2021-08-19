@@ -1,0 +1,85 @@
+$color-black: #000000;
+$color-first: #14213d;
+$color-second: #fca311;
+$color-third: #e5e5e5;
+$color-white: #fff;
+$font-size-first:2vw;
+$font-size-second:1.2vw;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&display=swap");
+$font-bebas: "Bebas Neue", cursive;
+$font-quicksand: "Quicksand", sans-serif;
+
+.btn-style{
+  outline: none;
+  background-color: $color-first;
+  color: $color-third;
+  border: 3px solid $color-second;
+  font-family: $font-bebas;
+  font-size: $font-size-first;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  &:active{
+    background-color: $color-second;
+    border:3px solid $color-first;
+  }
+  @media(max-width:950px){
+    width: 100px;
+  }
+}
+
+@mixin centering($top) {
+  position: absolute;
+  left: 50%;
+  top: $top;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+.focus-in-contract {
+  animation: focus-in-contract 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+.focus-in-contract2 {
+  animation: focus-in-contract 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+}
+.tracking-in-contract-bck-top {
+  animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    3s both;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }

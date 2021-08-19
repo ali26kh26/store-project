@@ -1,0 +1,57 @@
+@media(max-width:550px){
+    .head-nav{
+        flex-direction: column;
+        height: 80px;
+        .itemul{
+            order: -1;
+            height: 50%;
+            li{
+                line-height: 40px;
+                font-size: 3vw;
+            }
+        }
+        .head-cart{
+            .first{
+                order: -1;
+                margin-left: 10px;
+                i,label{
+                    font-size: 3vw;
+                }
+            }
+            .second{
+                margin-right: 20px;
+                font-size: 3vw;
+                i,label{
+                    font-size: 3vw;
+                }
+            }
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+    .proflie-info{
+        top:16%;
+        left: 6%;
+        li{
+        font-size: 3vw;
+        }
+    }
+    .btn-style{
+        width: 80px;
+        font-size: 3vw;
+    }
+    .content{
+        width: 100%;
+    }
+    .items{
+        width: 45%;
+        height: 50vw;
+    }
+    .buy-alert-container{
+        flex-direction: column;
+        span{
+            font-size: 3vw;
+        }
+    }
+    
+}
