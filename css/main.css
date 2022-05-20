@@ -390,7 +390,7 @@ main .content .item-container {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #fca311;
-  font-size: 6vw;
+  font-size: 5vw;
   letter-spacing: 9px;
   font-family: "Bebas Neue", cursive;
 }
@@ -402,7 +402,7 @@ main .content .item-container {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #fca311;
-  font-size: 4vw;
+  font-size: 2vw;
   letter-spacing: 3px;
   font-family: "Bebas Neue", cursive;
 }

@@ -75,14 +75,14 @@
 .head-name {
   @include centering(30%);
   color: $color-second;
-  font-size: 6vw;
+  font-size: 5vw;
   letter-spacing: 9px;
   font-family: $font-bebas;
 }
 .sub-name {
   @include centering(50%);
   color: $color-second;
-  font-size: 4vw;
+  font-size: 2vw;
   letter-spacing: 3px;
   font-family: $font-bebas;
 }

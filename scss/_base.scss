@@ -3,13 +3,20 @@ $color-first: #14213d;
 $color-second: #fca311;
 $color-third: #e5e5e5;
 $color-white: #fff;
-$font-size-first:2vw;
-$font-size-second:1.2vw;
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&display=swap");
+$font-size-first: 2vw;
+$font-size-second: 1.2vw;
+@font-face {
+  font-family: "Quicksand";
+  src: "../assest/fonts/Quicksand-Medium.ttf";
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: "../assest/fonts/BebasNeue-Regular.ttf";
+}
 $font-bebas: "Bebas Neue", cursive;
 $font-quicksand: "Quicksand", sans-serif;
 
-.btn-style{
+.btn-style {
   outline: none;
   background-color: $color-first;
   color: $color-third;
@@ -19,11 +26,11 @@ $font-quicksand: "Quicksand", sans-serif;
   width: 120px;
   height: 40px;
   border-radius: 20px;
-  &:active{
+  &:active {
     background-color: $color-second;
-    border:3px solid $color-first;
+    border: 3px solid $color-first;
   }
-  @media(max-width:950px){
+  @media (max-width: 950px) {
     width: 100px;
   }
 }
@@ -64,9 +71,13 @@ $font-quicksand: "Quicksand", sans-serif;
   }
 }
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+  from {
+    opacity: 0.4;
   }
+  to {
+    opacity: 1;
+  }
+}
 .focus-in-contract {
   animation: focus-in-contract 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
@@ -78,8 +89,8 @@ $font-quicksand: "Quicksand", sans-serif;
     3s both;
 }
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-name: fade;
-    animation-duration: 3s;
-  }
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
